@@ -4,6 +4,7 @@
     <button class="difficultyBtn" @click="filter('medium')">Medium</button>
     <button class="difficultyBtn" @click="filter('hard')">Hard</button>
     <button class="difficultyBtn" @click="filter('')">Show All</button>
+    <p class="resetLink" @click="resetCards">Hide all answers</p>
     <div class="triviaGame">
       <div
         v-for="triviaQ in filteredTrivia"
@@ -44,6 +45,11 @@ export default {
         );
       }
       return this.filteredTrivia;
+    },
+    resetCards() {
+      this.filteredTrivia.forEach(triviaCard => {
+        triviaCard.answerShown = false;
+      });
     }
   }
 };
@@ -68,5 +74,8 @@ export default {
   background-color: #bc9b8e;
   border: none;
   border-radius: 20px;
+}
+.resetLink {
+    text-decoration: underline;
 }
 </style>
