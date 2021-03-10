@@ -1,4 +1,6 @@
 # trivia
+deployed using Firebase Hosting  
+[view live demo](https://emberparr-flashcard-trivia.web.app/)
 
 ## Project setup
 ```
