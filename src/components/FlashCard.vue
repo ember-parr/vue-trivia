@@ -24,4 +24,11 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+button {
+  padding: 5px;
+  background-color: bisque;
+  opacity: 0.8;
+  border: none;
+}
+</style>
