@@ -29,7 +29,6 @@ export default {
   methods: {
     flipCard(card) {
       card.answerShown = !card.answerShown;
-      console.log("card flipped");
     }
   }
 };

@@ -1,7 +1,12 @@
 <template>
   <div>
     <h4>{{ card.question }}</h4>
-    <button @click="showAnswer">Show Answer</button>
+    <span v-if="card.answerShown === true">
+      <p>{{ card.answer }}</p>
+    </span>
+    <button @click="showAnswer">
+      {{ card.answerShown ? "Hide Answer" : "Show Answer" }}
+    </button>
   </div>
 </template>
 
