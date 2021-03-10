@@ -9,7 +9,7 @@
       <div
         v-for="triviaQ in filteredTrivia"
         :key="triviaQ.answer"
-        class="triviaCardz"
+        class="triviaCards"
       >
         <flash-card :card="triviaQ" @flip-card="flipCard" />
       </div>
@@ -56,12 +56,20 @@ export default {
 </script>
 
 <style>
-.triviaCardz {
+.triviaCards {
   border: 2px solid #bc9b8e;
   margin: 20px;
   padding: 15px;
   min-width: 250px;
   flex: 1;
+  align-items: center;
+  background-image: url(../assets/card-background.jpg);
+  background-size: contain;
+  text-shadow: -1px -1px 0 lightgray, 1px -1px 0 lightgray, -1px 1px 0 lightgray,
+    1px 1px 0 lightgray;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: black;
 }
 .triviaGame {
   display: flex;
@@ -76,6 +84,6 @@ export default {
   border-radius: 20px;
 }
 .resetLink {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 </style>
