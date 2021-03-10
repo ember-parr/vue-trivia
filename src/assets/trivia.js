@@ -1,4 +1,4 @@
-export default [
+export const TriviaData = [
   {
     question:
       "In Florida, only on Sundays, it is illegal for a single woman to do... what?",
