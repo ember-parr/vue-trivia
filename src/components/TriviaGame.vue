@@ -5,7 +5,11 @@
     <button class="difficultyBtn">Hard</button>
     <button class="difficultyBtn">Show All</button>
     <div class="triviaGame">
-      <div v-for="triviaQ in TriviaData" :key="triviaQ.answer" class="triviaCardz">
+      <div
+        v-for="triviaQ in TriviaData"
+        :key="triviaQ.answer"
+        class="triviaCardz"
+      >
         <flash-card :card="triviaQ" @flip-card="flipCard" />
       </div>
     </div>

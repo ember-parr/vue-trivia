@@ -1,5 +1,5 @@
 <template>
-  <div class="triviaCard">
+  <div>
     <h4>{{ card.question }}</h4>
     <button @click="showAnswer">Show Answer</button>
   </div>
@@ -16,11 +16,4 @@ export default {
 };
 </script>
 
-<style scoped>
-/* .triviaCard {
-  border: 2px solid #bc9b8e;
-  margin: 20px;
-  padding: 15px;
-  flex: 1;
-} */
-</style>
+<style scoped></style>
