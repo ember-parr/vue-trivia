@@ -13,6 +13,9 @@
 <script>
 export default {
   props: ["card"],
+  data() {
+    return {};
+  },
   methods: {
     showAnswer() {
       this.$emit("flip-card", this.card);

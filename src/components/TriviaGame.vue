@@ -1,12 +1,12 @@
 <template>
   <div>
-    <button class="difficultyBtn">Easy</button>
-    <button class="difficultyBtn">Medium</button>
-    <button class="difficultyBtn">Hard</button>
-    <button class="difficultyBtn">Show All</button>
+    <button class="difficultyBtn" @click="filter('easy')">Easy</button>
+    <button class="difficultyBtn" @click="filter('medium')">Medium</button>
+    <button class="difficultyBtn" @click="filter('hard')">Hard</button>
+    <button class="difficultyBtn" @click="filter('')">Show All</button>
     <div class="triviaGame">
       <div
-        v-for="triviaQ in TriviaData"
+        v-for="triviaQ in filteredTrivia"
         :key="triviaQ.answer"
         class="triviaCardz"
       >
@@ -19,16 +19,31 @@
 <script>
 import { TriviaData } from "../assets/trivia.js";
 import FlashCard from "./FlashCard.vue";
+
 export default {
   components: { FlashCard },
   data() {
     return {
-      TriviaData: [...TriviaData]
+      TriviaData: [...TriviaData],
+      filteredTrivia: TriviaData
     };
   },
   methods: {
     flipCard(card) {
       card.answerShown = !card.answerShown;
+    },
+    filter(difficulty) {
+      if (!difficulty) {
+        console.log("all trivia show now... ");
+        this.filteredTrivia = this.TriviaData;
+      } else {
+        console.log("difficulty is: " + difficulty);
+        console.table(this.filteredTrivia);
+        this.filteredTrivia = this.TriviaData.filter(
+          t => t.difficulty === `${difficulty}`
+        );
+      }
+      return this.filteredTrivia;
     }
   }
 };

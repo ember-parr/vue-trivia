@@ -17,7 +17,7 @@ export const TriviaData = [
       "In California, you can't legally buy a mousetrap without having what?",
     answer: "A hunting license",
     answerShown: false,
-    difficulty: "hard"
+    difficulty: "medium"
   },
   {
     question: "It is illegal to do what in the French vineyards?",
@@ -41,7 +41,7 @@ export const TriviaData = [
     question: "In Georgia, it’s illegal to eat what with a fork?",
     answer: "Fried Chicken",
     answerShown: false,
-    difficulty: "hard"
+    difficulty: "medium"
   },
   {
     question:
@@ -54,7 +54,7 @@ export const TriviaData = [
     question: "In Minnesota, it is illegal to tease what type of animal?",
     answer: "Skunks",
     answerShown: false,
-    difficulty: "hard"
+    difficulty: "medium"
   },
   {
     question: "How many teeth does an aardvark have?",
@@ -84,26 +84,26 @@ export const TriviaData = [
     question: "Where on the human body is the zygomatic bone found?",
     answer: "Facial Cheek",
     answerShown: false,
-    difficulty: "hard"
+    difficulty: "easy"
   },
   {
     question: "It was illegal for women to wear what in 19th century Florence?",
     answer: "Buttons",
     answerShown: false,
-    difficulty: "hard"
+    difficulty: "easy"
   },
   {
     question: "Who claimed he could “drive away the devil with a fart?”",
     answer: "Martin Luther",
     answerShown: false,
-    difficulty: "hard"
+    difficulty: "medium"
   },
   {
     question:
       "In St. Louis, Missouri, it’s illegal for a firefighter to rescue who?",
     answer: "Undressed women (or women in a nightgown)",
     answerShown: false,
-    difficulty: "hard"
+    difficulty: "medium"
   },
   {
     question: "What was banned in Indonesia for 'stimulating passion'? ",
